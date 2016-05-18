@@ -1,0 +1,13 @@
+{
+    "name": "jvitte/cli-app-demo",
+    "description": "CLI application development demo",
+    "authors": [
+        {
+            "name": "Julien VITTE",
+            "email": "j.vitte@alienor.net"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.0"
+    }
+}
