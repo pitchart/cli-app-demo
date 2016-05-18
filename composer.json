@@ -4,10 +4,15 @@
     "authors": [
         {
             "name": "Julien VITTE",
-            "email": "j.vitte@alienor.net"
+            "email": "vitte.julien@gmail.com"
         }
     ],
     "require": {
         "symfony/console": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pitchart\\CliAppDemo\\": "src/"
+        }
     }
 }
