@@ -21,8 +21,6 @@ class HelloCommand extends Command
             ->setName('hello')
             ->setDefinition(array(
                 new InputArgument('name', InputArgument::OPTIONAL, 'The command name', ''),
-                new InputOption('format', null, InputOption::VALUE_REQUIRED, 'The output format (txt, xml, json, or md)', 'txt'),
-                new InputOption('raw', null, InputOption::VALUE_NONE, 'To output raw command help'),
             ))
             ->setDescription('Says hello')
             ->setHelp(<<<'EOF'
