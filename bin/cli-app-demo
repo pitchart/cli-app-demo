@@ -15,5 +15,5 @@ $application->setDefaultCommand($defaultCommand->getName());
 $application->add(new Command\SelfUpdateCommand());
 
 //demo commands
-$application->add(new Command\QuestionCommand());
+$application->add(new Command\Demo\QuestionCommand());
 $application->run();
