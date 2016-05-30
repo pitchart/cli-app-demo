@@ -52,6 +52,9 @@ EOF
                     }
                 }
             }
+            else {
+                $output->writeln('Your application is up to date');
+            }
         } catch (\Exception $e) {
             $output->writeln('Well, something happened! Either an oopsie or something involving hackers.');
         }
