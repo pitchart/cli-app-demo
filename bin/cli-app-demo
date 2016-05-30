@@ -6,7 +6,7 @@ require __DIR__.'/../vendor/autoload.php';
 use Pitchart\CliAppDemo\Command;
 use Symfony\Component\Console\Application;
 
-$application = new Application('PHP-CLI application demo', '0.1-dev');
+$application = new Application('PHP-CLI application demo', '@package_version@');
 $application->add(new Command\HelloCommand());
 $application->add(new Command\SelfUpdateCommand());
 $application->run();
