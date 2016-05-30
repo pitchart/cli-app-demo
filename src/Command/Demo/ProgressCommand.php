@@ -46,9 +46,11 @@ EOF
 
             // advance the progress bar 1 unit
             $progress->advance();
-            usleep(200000);
-            if (!($i % 5)) {
-                usleep(500000);
+            if ($i % 5) {
+                usleep(rand(1,3)* 100000);
+            }
+            else {
+                usleep(rand(4, 8) * 100000);
             }
             // you can also advance the progress bar by more than 1 unit
             // $progress->advance(3);
