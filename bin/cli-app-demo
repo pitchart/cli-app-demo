@@ -8,4 +8,5 @@ use Symfony\Component\Console\Application;
 
 $application = new Application('PHP-CLI application demo', '0.1-dev');
 $application->add(new Command\HelloCommand());
+$application->add(new Command\SelfUpdateCommand());
 $application->run();
