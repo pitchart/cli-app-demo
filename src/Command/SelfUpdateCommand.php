@@ -41,22 +41,22 @@ EOF
             $result = $updater->hasUpdate();
             if ($result) {
                 $output->writeln(sprintf(
-                    'The current stable build available remotely is: %s',
+                    '<info>The current stable build available remotely is:</info> <comment>%s</comment>',
                     $updater->getNewVersion()
                 ));
                 $questionHelper = $this->getHelper('question');
                 $confirmation = new ConfirmationQuestion('Would you like to update the application ?', false);
                 if ($questionHelper->ask($input, $output, $confirmation)) {
                     if ($updater->update()) {
-                        $output->writeln(sprintf('Application updated to version %s', $updater->getNewVersion()));
+                        $output->writeln(sprintf('Application updated to version <comment>%s</comment>', $updater->getNewVersion()));
                     }
                 }
             }
             else {
-                $output->writeln('Your application is up to date');
+                $output->writeln('Your application is already up to date');
             }
         } catch (\Exception $e) {
-            $output->writeln('Well, something happened! Either an oopsie or something involving hackers.');
+            $output->writeln('<error>Well, something happened! Either an oopsie or something involving hackers.</error>');
         }
 
     }
