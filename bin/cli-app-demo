@@ -17,5 +17,6 @@ $application->add(new Command\SelfUpdateCommand());
 //demo commands
 $application->add(new Command\Demo\QuestionCommand());
 $application->add(new Command\Demo\ProcessCommand());
+$application->add(new Command\Demo\ProgressCommand());
 
 $application->run();
