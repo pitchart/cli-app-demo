@@ -1,0 +1,20 @@
+{
+    "chmod": "0755",
+    "compression": "GZ",
+    "finder": [
+        {
+            "name": "*",
+            "exclude": ["Tests"],
+            "in": "src"
+        },
+        {
+            "name": "*.php",
+            "exclude": ["Tests", "Test", "tests", "test"],
+            "in": "vendor"
+        }
+    ],
+    "git-version": "package_version",
+    "main": "bin/cli-app-demo",
+    "output": "build/cli-app-demo.phar",
+    "stub": true
+}
